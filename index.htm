@@ -8,17 +8,25 @@
 </head>
 <body>
     <div class="container">
-        <div class="heading">
-            <h1>Pokèmon Dex</h1>
-        </div>
         <div class="inputs">
-            <input type="text" id="pokemonName" placeholder="Enter The Name of Pokemon">
-            <button id="btn">Search</button>
+            <div class="heading">PokeDex</div>
+            <div class="searchInputs">
+                <input type="text" id="pokemonName" placeholder="Enter The Name of Pokemon">
+                <button id="btn">Search</button>
+            </div>
         </div>
         <div class="results">
+            <h1 id="welcomeMsg">Welcome to the World of PokeMon</h1>
             <h1 id="errorMsg"></h1>
-            <img id ="resultImg" alt="Image of your Pokemon" style="display: none;">
+            <img id="resultImg" alt="Image of your Pokémon" style="display: none;">
+            <div id="pokemonDetails">
+                <p id="pokemonHeight"></p>
+                <p id="pokemonWeight"></p>
+                <p id="pokemonType"></p>
+                <p id="pokemonAbilities"></p>
+            </div>
         </div>
+        
     </div>
     <script src="scripts.js"></script>
 </body>
